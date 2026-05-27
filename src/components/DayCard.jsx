@@ -9,8 +9,8 @@ export default function DayCard({ day, color }) {
         {label}
       </div>
       <div className="day-card__slots">
-        {day.slots.map((slot, i) => (
-          <SlotItem key={i} slot={slot} />
+        {day.slots.map((slot) => (
+          <SlotItem key={slot.label} slot={slot} />
         ))}
       </div>
     </div>
