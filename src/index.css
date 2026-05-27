@@ -18,6 +18,8 @@ body {
   --slot-tbd-border: #ddd;
   --orange: #e07b39;
   --orange-dark: #c8410a;
+  --orange-light: #f5a623;
+  --orange-accent: #c85c1a;
   --blue: #2e86ab;
   --green: #3a9e6e;
   --purple: #7b5ea7;
@@ -30,7 +32,7 @@ body {
 
 /* ---- Hero ---- */
 .hero {
-  background: linear-gradient(160deg, var(--orange-dark) 0%, var(--orange) 60%, #f5a623 100%);
+  background: linear-gradient(160deg, var(--orange-dark) 0%, var(--orange) 60%, var(--orange-light) 100%);
   padding: 36px 20px 28px;
   text-align: center;
 }
@@ -129,7 +131,7 @@ body {
   letter-spacing: 1.2px;
   margin-bottom: 10px;
 }
-.day-card__label--orange { color: #c85c1a; }
+.day-card__label--orange { color: var(--orange-accent); }
 .day-card__label--blue   { color: var(--blue); }
 .day-card__label--green  { color: var(--green); }
 .day-card__label--purple { color: var(--purple); }
