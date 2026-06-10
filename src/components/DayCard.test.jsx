@@ -18,7 +18,7 @@ test('renders date and location in label', () => {
 test('renders all slot labels', () => {
   render(<DayCard day={day} color="blue" />)
   expect(screen.getByText('Beach day')).toBeInTheDocument()
-  expect(screen.getByText('Dinner spot TBD')).toBeInTheDocument()
+  expect(screen.getByText('Dinner spot')).toBeInTheDocument()
 })
 
 test('applies correct color class to label', () => {

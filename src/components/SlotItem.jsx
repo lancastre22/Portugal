@@ -8,20 +8,18 @@ const SLOT_ICONS = {
 
 export default function SlotItem({ slot }) {
   const icon = SLOT_ICONS[slot.type] ?? '📍'
-
-  if (slot.confirmed) {
-    return (
-      <div className="slot slot--confirmed">
-        <span className="slot__icon">{icon}</span>
-        <span>{slot.label}</span>
-      </div>
-    )
-  }
+  const className = slot.confirmed ? 'slot slot--confirmed' : 'slot slot--tbd'
 
   return (
-    <div className="slot slot--tbd">
+    <div className={className}>
       <span className="slot__icon">{icon}</span>
-      <span>{slot.label} TBD</span>
+      <div className="slot__body">
+        <span className="slot__label">
+          {slot.label}
+          {!slot.confirmed && <span className="slot__tag">idea</span>}
+        </span>
+        {slot.note && <span className="slot__note">{slot.note}</span>}
+      </div>
     </div>
   )
 }

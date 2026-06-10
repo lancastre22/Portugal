@@ -16,6 +16,16 @@ export default function PhaseSection({ phase }) {
           <DayCard key={day.date} day={day} color={phase.color} />
         ))}
       </div>
+      {phase.routeUrl && (
+        <a
+          className="phase__route"
+          href={phase.routeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🗺 View full route on Google Maps
+        </a>
+      )}
     </section>
   )
 }

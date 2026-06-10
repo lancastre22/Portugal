@@ -14,12 +14,12 @@ test('renders all 4 phase names', () => {
   expect(screen.getByText('Home Stretch')).toBeInTheDocument()
 })
 
-test('renders confirmed slot without TBD', () => {
+test('renders a confirmed restaurant slot', () => {
   render(<App />)
   expect(screen.getByText('Bar do Fundo')).toBeInTheDocument()
 })
 
-test('renders open slot with TBD suffix', () => {
+test('renders an idea slot label', () => {
   render(<App />)
-  expect(screen.getByText('Lunch in Lisbon TBD')).toBeInTheDocument()
+  expect(screen.getByText('Praia dos Machados')).toBeInTheDocument()
 })
