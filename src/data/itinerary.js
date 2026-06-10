@@ -20,6 +20,7 @@ export const phases = [
     emoji: "🏛",
     color: "orange",
     dates: "Sat Jun 13",
+    routeUrl: "https://www.google.com/maps/dir/Torre+de+Belém,+Lisboa/Mosteiro+dos+Jerónimos,+Lisboa/Solar+dos+Presuntos,+Lisboa/Praça+do+Comércio,+Lisboa/Chiado,+Lisboa",
     days: [
       {
         date: "Sat Jun 13",
