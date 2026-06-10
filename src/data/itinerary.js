@@ -20,14 +20,14 @@ export const phases = [
     emoji: "🏛",
     color: "orange",
     dates: "Sat Jun 13",
-    routeUrl: "https://www.google.com/maps/dir/Torre+de+Belém,+Lisboa/Mosteiro+dos+Jerónimos,+Lisboa/Solar+dos+Presuntos,+Lisboa/Praça+do+Comércio,+Lisboa/Chiado,+Lisboa",
+    routeUrl: "https://www.google.com/maps/dir/Torre+de+Belém,+Lisboa/Mosteiro+dos+Jerónimos,+Lisboa/Zé+da+Mouraria,+Lisboa/Praça+do+Comércio,+Lisboa/Chiado,+Lisboa",
     days: [
       {
         date: "Sat Jun 13",
         location: "Lisbon",
         slots: [
           { type: "activity",   label: "Morning: Belém",                confirmed: false, note: "Torre de Belém, Mosteiro dos Jerónimos, Pastéis de Belém (the OG nata)" },
-          { type: "restaurant", label: "Lunch: Solar dos Presuntos",    confirmed: false, note: "Classic Lisbon institution (Baixa) — hearty, authentic Portuguese, no trend nonsense" },
+          { type: "restaurant", label: "Lunch: Zé da Mouraria",         confirmed: false, note: "Top chefs call it the best tasca in Lisbon — huge plates of bacalhau & octopus. By Chiado, cash only, go early to beat the queue" },
           { type: "activity",   label: "Afternoon: Baixa & Chiado",     confirmed: false, note: "Terreiro do Paço, Rua Augusta arch, Santa Justa lift, miradouro de Santa Catarina" },
           { type: "logistics",  label: "Uber to Praia Grande",          confirmed: true,  note: "~40 min — Manuel arrives next morning" },
         ],
@@ -89,7 +89,7 @@ export const phases = [
         location: "Coast → Sagres",
         slots: [
           { type: "logistics",  label: "Pack up, drive south",          confirmed: true,  note: "Brejo Largo → Sagres is ~1.5h" },
-          { type: "restaurant", label: "Lunch + supplies midpoint",     confirmed: false, note: "Odeceixe or Aljezur — supermarkets + charm" },
+          { type: "restaurant", label: "Lunch in Aljezur: Pont'a Pé",   confirmed: false, note: "Top authentic spot in Aljezur (seafood + steak). Grab supplies at the town supermarket — it's ~45 min from Sagres" },
           { type: "beach",      label: "Praia do Tonel, Sagres",        confirmed: false, note: "Furthest south — pair with Cabo de São Vicente, the 'end of the world'" },
           { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Legal backup: Orbitur Sagres / Camping Serrão (Aljezur)" },
         ],
@@ -109,7 +109,7 @@ export const phases = [
         slots: [
           { type: "logistics",  label: "Drive back (~3h)",              confirmed: true },
           { type: "logistics",  label: "Drop rental car in Lisbon",     confirmed: true },
-          { type: "restaurant", label: "Dinner in Lisbon before heading back", confirmed: false, note: "You're in Lisbon dropping the car anyway — pick a recommended spot: Cortesia, Adega do Tagarro or Rodas" },
+          { type: "restaurant", label: "Dinner in Lisbon: Cortesia",    confirmed: false, note: "Your pick — easy to hit right after dropping the car, before heading back to Praia Grande" },
         ],
       },
       {
@@ -118,7 +118,7 @@ export const phases = [
         slots: [
           { type: "vibe",       label: "Slow morning",                  confirmed: true },
           { type: "logistics",  label: "Head to Lisbon around midday",  confirmed: true },
-          { type: "restaurant", label: "Lunch: Zé da Mouraria",         confirmed: false, note: "Legendary Mouraria tasca — famous bacalhau. Lunch only, get there early" },
+          { type: "restaurant", label: "Lunch: Adega do Tagarro",      confirmed: false, note: "Bairro Alto family tasca (your rec) — fried horse mackerel, bacalhau iscas, pataniscas. Bairro Alto's also lively for Santos Populares after" },
           { type: "activity",   label: "Explore Alfama + Graça/Mouraria", confirmed: false, note: "The areas the crew skipped Sat — miradouros, São Jorge castle" },
           { type: "logistics",  label: "Break at the Lisbon apartment", confirmed: true },
           { type: "activity",   label: "Santos Populares",              confirmed: true,  note: "Grilled sardines + street arraiais. Peak was Santo António (Jun 12–13); the 19th is smaller but still on" },
