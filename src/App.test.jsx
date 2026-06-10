@@ -21,5 +21,5 @@ test('renders a confirmed restaurant slot', () => {
 
 test('renders an idea slot label', () => {
   render(<App />)
-  expect(screen.getByText('Praia dos Machados')).toBeInTheDocument()
+  expect(screen.getByText('Praia do Brejo Largo')).toBeInTheDocument()
 })

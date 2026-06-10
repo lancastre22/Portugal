@@ -26,7 +26,7 @@ export const phases = [
         location: "Lisbon",
         slots: [
           { type: "activity",   label: "Morning: Belém",                confirmed: false, note: "Torre de Belém, Mosteiro dos Jerónimos, Pastéis de Belém (the OG nata)" },
-          { type: "restaurant", label: "Lunch: Time Out Market",        confirmed: false, note: "Cais do Sodré — easy + varied for a jetlagged crew" },
+          { type: "restaurant", label: "Lunch: Solar dos Presuntos",    confirmed: false, note: "Classic Lisbon institution (Baixa) — hearty, authentic Portuguese, no trend nonsense" },
           { type: "activity",   label: "Afternoon: Baixa & Chiado",     confirmed: false, note: "Terreiro do Paço, Rua Augusta arch, Santa Justa lift, miradouro de Santa Catarina" },
           { type: "logistics",  label: "Uber to Praia Grande",          confirmed: true,  note: "~40 min — Manuel arrives next morning" },
         ],
@@ -70,7 +70,7 @@ export const phases = [
     emoji: "🏕",
     color: "green",
     dates: "Tue Jun 16 – Wed Jun 17",
-    routeUrl: "https://www.google.com/maps/dir/Praia+Grande,+Sintra/Lisboa/Praia+dos+Machados/Praia+do+Brejo+Largo/Praia+do+Tonel,+Sagres/Lisboa/Praia+Grande,+Sintra",
+    routeUrl: "https://www.google.com/maps/dir/Praia+Grande,+Sintra/Lisboa/Praia+do+Brejo+Largo/Praia+do+Tonel,+Sagres/Lisboa/Praia+Grande,+Sintra",
     days: [
       {
         date: "Tue Jun 16",
@@ -79,16 +79,16 @@ export const phases = [
           { type: "logistics",  label: "Pick up rental car (10am)",     confirmed: true },
           { type: "restaurant", label: "Lunch: Cervejaria Ramiro",      confirmed: true,  note: "Book 1–2 days ahead; go early to beat the queue" },
           { type: "logistics",  label: "Get supplies at supermarket",   confirmed: true,  note: "Stock up before heading south — leave Lisbon ~12–1" },
-          { type: "beach",      label: "Praia dos Machados",            confirmed: false, note: "Wild Costa Vicentina beach near Almograve (~2h) — long stairway down" },
+          { type: "beach",      label: "Praia do Brejo Largo",          confirmed: false, note: "Wild beach near Almograve (~2–2.5h). Real car park + worn path = easier for hauling gear. Hard to find: aim for Longueira village, then the dirt road" },
           { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Heads-up: beach camping is fined here — legal backup: Milfontes / Zmar campsite" },
         ],
       },
       {
         date: "Wed Jun 17",
-        location: "Coast",
+        location: "Coast → Sagres",
         slots: [
-          { type: "beach",      label: "Praia do Brejo Largo",          confirmed: false, note: "Remote wild beach near Zambujeira do Mar" },
-          { type: "restaurant", label: "Lunch + supplies midpoint",     confirmed: false, note: "Zambujeira do Mar, Odeceixe or Aljezur — supermarkets + charm" },
+          { type: "logistics",  label: "Pack up, drive south",          confirmed: true,  note: "Brejo Largo → Sagres is ~1.5h" },
+          { type: "restaurant", label: "Lunch + supplies midpoint",     confirmed: false, note: "Odeceixe or Aljezur — supermarkets + charm" },
           { type: "beach",      label: "Praia do Tonel, Sagres",        confirmed: false, note: "Furthest south — pair with Cabo de São Vicente, the 'end of the world'" },
           { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Legal backup: Orbitur Sagres / Camping Serrão (Aljezur)" },
         ],
@@ -104,11 +104,11 @@ export const phases = [
     days: [
       {
         date: "Thu Jun 18",
-        location: "Coast → Praia Grande",
+        location: "Sagres → Lisbon → Praia Grande",
         slots: [
           { type: "logistics",  label: "Drive back (~3h)",              confirmed: true },
           { type: "logistics",  label: "Drop rental car in Lisbon",     confirmed: true },
-          { type: "restaurant", label: "Dinner at home or nearby",      confirmed: false },
+          { type: "restaurant", label: "Dinner in Lisbon before heading back", confirmed: false, note: "You're in Lisbon dropping the car anyway — pick a recommended spot: Cortesia, Adega do Tagarro or Rodas" },
         ],
       },
       {
@@ -116,10 +116,10 @@ export const phases = [
         location: "Lisbon",
         slots: [
           { type: "vibe",       label: "Slow morning",                  confirmed: true },
-          { type: "logistics",  label: "Head to Lisbon late afternoon", confirmed: true },
+          { type: "logistics",  label: "Head to Lisbon around midday",  confirmed: true },
+          { type: "restaurant", label: "Lunch: Zé da Mouraria",         confirmed: false, note: "Legendary Mouraria tasca — famous bacalhau. Lunch only, get there early" },
           { type: "activity",   label: "Explore Alfama + Graça/Mouraria", confirmed: false, note: "The areas the crew skipped Sat — miradouros, São Jorge castle" },
           { type: "logistics",  label: "Break at the Lisbon apartment", confirmed: true },
-          { type: "restaurant", label: "Tasca dinner before the party", confirmed: false, note: "Options: Rodas, Solar dos Presuntos, Adega do Tagarro" },
           { type: "activity",   label: "Santos Populares",              confirmed: true,  note: "Grilled sardines + street arraiais. Peak was Santo António (Jun 12–13); the 19th is smaller but still on" },
           { type: "logistics",  label: "Sleep in Praia Grande",         confirmed: true },
         ],
@@ -130,7 +130,7 @@ export const phases = [
         slots: [
           { type: "vibe",       label: "Open day — vibes",              confirmed: false, note: "People start leaving — keep it loose" },
           { type: "activity",   label: "Optional: Sintra day",          confirmed: false, note: "Pena Palace, Quinta da Regaleira — right next door for whoever stays" },
-          { type: "restaurant", label: "Farewell dinner",               confirmed: false },
+          { type: "restaurant", label: "Beachfront Portuguese restaurant", confirmed: false, note: "Manuel's pick right by the beach — need the name to confirm" },
         ],
       },
       {
