@@ -8,8 +8,8 @@ test('renders trip title', () => {
 
 test('renders all 4 phase names', () => {
   render(<App />)
-  expect(screen.getByText('Friends Arrive')).toBeInTheDocument()
   expect(screen.getByText('Praia Grande Base')).toBeInTheDocument()
+  expect(screen.getByText('Lisbon Day')).toBeInTheDocument()
   expect(screen.getByText('Coastal Road Trip')).toBeInTheDocument()
   expect(screen.getByText('Home Stretch')).toBeInTheDocument()
 })

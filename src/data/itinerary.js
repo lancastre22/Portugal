@@ -10,57 +10,61 @@
 //              false -> dashed "idea" item (suggestion / TBD)
 //    note      (optional) small grey subtext under the label
 //
+//  A phase can also have an optional `routeUrl` -> renders a Google Maps button.
+//
 //  To add a plan: find the day and drop a new slot into its `slots` array.
 // =============================================================================
 
 export const phases = [
   {
-    id: "friends-arrive",
-    name: "Friends Arrive",
-    emoji: "🏛",
-    color: "orange",
-    dates: "Sat Jun 13",
-    routeUrl: "https://www.google.com/maps/dir/Torre+de+Belém,+Lisboa/Mosteiro+dos+Jerónimos,+Lisboa/Zé+da+Mouraria,+Lisboa/Praça+do+Comércio,+Lisboa/Chiado,+Lisboa",
-    days: [
-      {
-        date: "Sat Jun 13",
-        location: "Lisbon",
-        slots: [
-          { type: "activity",   label: "Morning: Belém",                confirmed: false, note: "Torre de Belém, Mosteiro dos Jerónimos, Pastéis de Belém (the OG nata)" },
-          { type: "restaurant", label: "Lunch: Zé da Mouraria",         confirmed: false, note: "Top chefs call it the best tasca in Lisbon — huge plates of bacalhau & octopus. By Chiado, cash only, go early to beat the queue" },
-          { type: "activity",   label: "Afternoon: Baixa & Chiado",     confirmed: false, note: "Terreiro do Paço, Rua Augusta arch, Santa Justa lift, miradouro de Santa Catarina" },
-          { type: "logistics",  label: "Uber to Praia Grande",          confirmed: true,  note: "~40 min — Manuel arrives next morning" },
-        ],
-      },
-    ],
-  },
-  {
     id: "praia-grande-base",
     name: "Praia Grande Base",
     emoji: "🏄",
     color: "blue",
-    dates: "Sun Jun 14 – Mon Jun 15",
+    dates: "Sat Jun 13 – Sun Jun 14",
     days: [
       {
-        date: "Sun Jun 14",
+        date: "Sat Jun 13",
         location: "Praia Grande",
         slots: [
-          { type: "logistics",  label: "Manuel arrives",                confirmed: true },
+          { type: "logistics",  label: "Friends arrive → Praia Grande", confirmed: true,  note: "Straight to the house from the airport — Manuel arrives next morning" },
           { type: "beach",      label: "Beach day",                     confirmed: true },
-          { type: "activity",   label: "Cliff hike → Cabo da Roca",     confirmed: false, note: "Westernmost point of mainland Europe — great sunset" },
           { type: "vibe",       label: "Pool / soccer at house",        confirmed: true },
+          { type: "activity",   label: "Cliff hike → Cabo da Roca",     confirmed: false, note: "Westernmost point of mainland Europe — great sunset" },
           { type: "restaurant", label: "Bar do Fundo",                  confirmed: true },
         ],
       },
       {
-        date: "Mon Jun 15",
+        date: "Sun Jun 14",
         location: "Praia Grande",
         slots: [
+          { type: "logistics",  label: "Manuel arrives (morning)",      confirmed: true },
           { type: "activity",   label: "Cliff hike → Praia da Adraga",  confirmed: true },
           { type: "beach",      label: "Beach / surf",                  confirmed: false },
           { type: "vibe",       label: "Pool / soccer at house",        confirmed: true },
           { type: "activity",   label: "Azenhas do Mar natural pool",   confirmed: false, note: "Cliffside village + sea pool, ~15 min up the coast" },
           { type: "restaurant", label: "Buzio",                         confirmed: true },
+        ],
+      },
+    ],
+  },
+  {
+    id: "lisbon-day",
+    name: "Lisbon Day",
+    emoji: "🏛",
+    color: "orange",
+    dates: "Mon Jun 15",
+    routeUrl: "https://www.google.com/maps/dir/Torre+de+Belém,+Lisboa/Mosteiro+dos+Jerónimos,+Lisboa/Zé+da+Mouraria,+Lisboa/Praça+do+Comércio,+Lisboa/Chiado,+Lisboa",
+    days: [
+      {
+        date: "Mon Jun 15",
+        location: "Lisbon",
+        slots: [
+          { type: "logistics",  label: "Head to Lisbon for the day",    confirmed: true },
+          { type: "activity",   label: "Morning: Belém",                confirmed: false, note: "Torre de Belém, Mosteiro dos Jerónimos, Pastéis de Belém (the OG nata)" },
+          { type: "restaurant", label: "Lunch: Zé da Mouraria",         confirmed: false, note: "Top chefs call it the best tasca in Lisbon — huge plates of bacalhau & octopus. By Chiado, cash only, go early to beat the queue" },
+          { type: "activity",   label: "Afternoon: Baixa & Chiado",     confirmed: false, note: "Terreiro do Paço, Rua Augusta arch, Santa Justa lift, miradouro de Santa Catarina" },
+          { type: "logistics",  label: "Back to Praia Grande",          confirmed: true },
         ],
       },
     ],
@@ -119,7 +123,7 @@ export const phases = [
           { type: "vibe",       label: "Slow morning",                  confirmed: true },
           { type: "logistics",  label: "Head to Lisbon around midday",  confirmed: true },
           { type: "restaurant", label: "Lunch: Adega do Tagarro",      confirmed: false, note: "Bairro Alto family tasca (your rec) — fried horse mackerel, bacalhau iscas, pataniscas. Bairro Alto's also lively for Santos Populares after" },
-          { type: "activity",   label: "Explore Alfama + Graça/Mouraria", confirmed: false, note: "The areas the crew skipped Sat — miradouros, São Jorge castle" },
+          { type: "activity",   label: "Explore Alfama + Graça/Mouraria", confirmed: false, note: "Areas you didn't catch on the Monday Lisbon day — miradouros, São Jorge castle" },
           { type: "logistics",  label: "Break at the Lisbon apartment", confirmed: true },
           { type: "activity",   label: "Santos Populares",              confirmed: true,  note: "Grilled sardines + street arraiais. Peak was Santo António (Jun 12–13); the 19th is smaller but still on" },
           { type: "logistics",  label: "Sleep in Praia Grande",         confirmed: true },
