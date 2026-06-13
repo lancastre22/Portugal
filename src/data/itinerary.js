@@ -81,12 +81,12 @@ export const phases = [
         date: "Tue Jun 16",
         location: "Praia Grande → Coast",
         slots: [
-          { type: "logistics",  label: "Uber to Cascais, pick up car",  confirmed: true,  note: "No Lisbon needed — Cascais has 24 rental companies (Europcar, Guerin, Enterprise...) and skips the airport surcharge. Round trip, book ~1 week ahead" },
-          { type: "logistics",  label: "Decathlon Cascais (Alcabideche)", confirmed: true, note: "Right by Cascais (~10–15 min from home) — no backtrack toward Lisbon. Grab the Decathlon checklist items" },
-          { type: "restaurant", label: "Quick lunch on the way",        confirmed: false, note: "Midpoint town — Alcácer do Sal, Grândola or Santiago do Cacém. Leave the spot open for now" },
-          { type: "logistics",  label: "Groceries near the beach",      confirmed: true,  note: "Vila Nova de Milfontes (~20 min from Almograve) has supermarkets — buy food & ice here so the cooler stays cold" },
-          { type: "beach",      label: "Praia do Brejo Largo",          confirmed: false, note: "Wild beach near Almograve. Real car park + worn path = easier for hauling gear. Hard to find: aim for Longueira village, then the dirt road" },
-          { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Heads-up: beach camping is fined here — legal backup: Milfontes / Zmar campsite" },
+          { type: "logistics",  label: "9:00 — Uber to Cascais, car by 10", confirmed: true,  note: "Cascais has 24 rental companies, no airport surcharge. Round trip, book ~1 week ahead" },
+          { type: "logistics",  label: "Decathlon Cascais (Alcabideche) — out by ~11:30", confirmed: true,  note: "~10–15 min from home, no Lisbon detour. Grab the Decathlon checklist items" },
+          { type: "restaurant", label: "Quick lunch on the way",        confirmed: false, note: "Keep it grab-and-go to hold the schedule — a sit-down midway pushes the beach to ~4 (Alcácer do Sal / Grândola if you stop)" },
+          { type: "logistics",  label: "~1:30 — Groceries + ice, Vila Nova de Milfontes", confirmed: true,  note: "Last proper supermarket before the beach (~15 min from Machados)" },
+          { type: "beach",      label: "~2:30 — Afternoon at Praia dos Machados", confirmed: true,  note: "The goated one — dramatic cliffs + long staircase. Bring just beach stuff; the car stays up top" },
+          { type: "vibe",       label: "~6 — Over to Brejo Largo, set up camp", confirmed: true,  note: "A few minutes away. Pitch before sunset (~9pm). Beach camping is fined — legal backup: Milfontes / Zmar campsite" },
         ],
       },
       {
