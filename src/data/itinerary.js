@@ -81,12 +81,12 @@ export const phases = [
         date: "Tue Jun 16",
         location: "Praia Grande → Coast",
         slots: [
-          { type: "logistics",  label: "9:00 — Uber to Cascais, car by 10", confirmed: true,  note: "Cascais has 24 rental companies, no airport surcharge. Round trip, book ~1 week ahead" },
+          { type: "logistics",  label: "9:00 — Uber to Cascais, car by 10", confirmed: true,  note: "Cascais has 24 rental companies, no airport surcharge — round trip, book ~1 week ahead. Aim for a 7-seat SUV (good clearance) or 9-seat van + roof box; NO 4x4 needed, 2 named drivers, add the Via Verde toll device" },
           { type: "logistics",  label: "Decathlon Cascais (Alcabideche) — out by ~11:30", confirmed: true,  note: "~10–15 min from home, no Lisbon detour. Grab the Decathlon checklist items" },
           { type: "restaurant", label: "Quick lunch on the way",        confirmed: false, note: "Keep it grab-and-go to hold the schedule — a sit-down midway pushes the beach to ~4 (Alcácer do Sal / Grândola if you stop)" },
           { type: "logistics",  label: "~1:30 — Groceries + ice, Vila Nova de Milfontes", confirmed: true,  note: "Last proper supermarket before the beach (~15 min from Machados)" },
-          { type: "beach",      label: "~2:30 — Afternoon at Praia dos Machados", confirmed: true,  note: "The goated one — dramatic cliffs + long staircase. Bring just beach stuff; the car stays up top" },
-          { type: "vibe",       label: "~6 — Over to Brejo Largo, set up camp", confirmed: true,  note: "A few minutes away. Pitch before sunset (~9pm). Beach camping is fined — legal backup: Milfontes / Zmar campsite" },
+          { type: "beach",      label: "~2:30 — Afternoon at Praia dos Machados", confirmed: true,  note: "The goated one — dramatic cliffs + long staircase down (park up top, no sand driving). Small dirt clifftop lot; bring just beach stuff" },
+          { type: "vibe",       label: "~6 — Over to Brejo Largo, set up camp", confirmed: true,  note: "A few min away via a narrow, bumpy dirt road (2WD-fine when dry, no sand driving) to a small dirt lot. Pitch before sunset (~9pm). Beach camping is fined — legal backup: Milfontes / Zmar campsite" },
         ],
       },
       {
@@ -95,7 +95,7 @@ export const phases = [
         slots: [
           { type: "logistics",  label: "Pack up, drive south",          confirmed: true,  note: "Brejo Largo → Sagres is ~1.5h" },
           { type: "restaurant", label: "Lunch in Aljezur: Pont'a Pé",   confirmed: false, note: "Top authentic spot in Aljezur (seafood + steak). Grab supplies at the town supermarket — it's ~45 min from Sagres" },
-          { type: "beach",      label: "Praia do Tonel, Sagres",        confirmed: false, note: "Furthest south — pair with Cabo de São Vicente, the 'end of the world'" },
+          { type: "beach",      label: "Praia do Tonel, Sagres",        confirmed: false, note: "Furthest south — pair with Cabo de São Vicente, the 'end of the world'. Big paved car park, easy access" },
           { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Legal backup: Orbitur Sagres / Camping Serrão (Aljezur)" },
         ],
       },
