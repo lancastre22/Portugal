@@ -75,16 +75,16 @@ export const phases = [
     emoji: "🏕",
     color: "green",
     dates: "Tue Jun 16 – Wed Jun 17",
-    routeUrl: "https://www.google.com/maps/dir/Praia+Grande,+Sintra/Cascais/Decathlon+Alfragide/Praia+do+Brejo+Largo/Praia+do+Tonel,+Sagres/Lisboa/Praia+Grande,+Sintra",
+    routeUrl: "https://www.google.com/maps/dir/Praia+Grande,+Sintra/Cascais/Praia+do+Brejo+Largo/Praia+do+Tonel,+Sagres/Cascais/Praia+Grande,+Sintra",
     days: [
       {
         date: "Tue Jun 16",
-        location: "Lisbon → Coast",
+        location: "Praia Grande → Coast",
         slots: [
-          { type: "logistics",  label: "Pick up rental car in Cascais", confirmed: true,  note: "Rent near home to skip the Lisbon backtrack. One-way to drop in Lisbon Thu — check the fee (Cascais↔Lisbon is usually small or waived)" },
-          { type: "logistics",  label: "Decathlon Alfragide — camping gear", confirmed: true, note: "Largest Decathlon in Lisbon, right off the A5 toward the bridge. Knock out the Decathlon checklist items" },
-          { type: "restaurant", label: "Quick lunch down south",        confirmed: false, note: "Grândola or Santiago do Cacém (~1.5–2h on the A2) — leave the spot open for now" },
-          { type: "logistics",  label: "Supermarket — food & ice",      confirmed: true,  note: "Buy closer to the beach so the cooler stays cold (same town as lunch)" },
+          { type: "logistics",  label: "Uber to Cascais, pick up car",  confirmed: true,  note: "No Lisbon needed — Cascais has 24 rental companies (Europcar, Guerin, Enterprise...) and skips the airport surcharge. Round trip, book ~1 week ahead" },
+          { type: "logistics",  label: "Decathlon Cascais (Alcabideche)", confirmed: true, note: "Right by Cascais (~10–15 min from home) — no backtrack toward Lisbon. Grab the Decathlon checklist items" },
+          { type: "restaurant", label: "Quick lunch on the way",        confirmed: false, note: "Midpoint town — Alcácer do Sal, Grândola or Santiago do Cacém. Leave the spot open for now" },
+          { type: "logistics",  label: "Groceries near the beach",      confirmed: true,  note: "Vila Nova de Milfontes (~20 min from Almograve) has supermarkets — buy food & ice here so the cooler stays cold" },
           { type: "beach",      label: "Praia do Brejo Largo",          confirmed: false, note: "Wild beach near Almograve. Real car park + worn path = easier for hauling gear. Hard to find: aim for Longueira village, then the dirt road" },
           { type: "vibe",       label: "Camp at sunset",                confirmed: true,  note: "Heads-up: beach camping is fined here — legal backup: Milfontes / Zmar campsite" },
         ],
@@ -110,12 +110,11 @@ export const phases = [
     days: [
       {
         date: "Thu Jun 18",
-        location: "Sagres → Lisbon → Praia Grande",
+        location: "Sagres → Praia Grande",
         slots: [
-          { type: "logistics",  label: "Drive back (~3h)",              confirmed: true,  note: "A2 north — Lisbon is on the way home from the south" },
-          { type: "logistics",  label: "Drop rental car in Lisbon",     confirmed: true,  note: "Drop it as you pass through, then train/Uber to Praia Grande" },
-          { type: "restaurant", label: "Dinner in Lisbon: Cortesia",    confirmed: false, note: "Your pick — right after dropping the car" },
-          { type: "logistics",  label: "Back to Praia Grande",          confirmed: true },
+          { type: "logistics",  label: "Drive back (~3h)",              confirmed: true,  note: "Take it easy — stop for a relaxed lunch on the way (Santiago do Cacém / Grândola)" },
+          { type: "logistics",  label: "Drop car in Cascais",           confirmed: true,  note: "Same place you picked up — round trip, no one-way fee" },
+          { type: "logistics",  label: "Uber home + shower",            confirmed: true,  note: "Everyone's tired by now — collapse at the house, no Lisbon plans" },
         ],
       },
       {
